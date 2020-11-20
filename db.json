@@ -1,0 +1,300 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Tom",
+      "phone": "8-800-555-22-33",
+      "status": "online"
+    },
+    {
+      "id": 2,
+      "name": "Sam",
+      "phone": "8-800-888-22-33",
+      "status": "offline"
+    },
+    {
+      "id": 3,
+      "name": "Samuel",
+      "phone": "8-800-232-22-33",
+      "status": "offline"
+    },
+    {
+      "id": 4,
+      "name": "Jack",
+      "phone": "8-800-777-22-33",
+      "status": "online"
+    },
+    {
+      "id": 5,
+      "name": "Miranda",
+      "phone": "8-800-241-22-33",
+      "status": "offline"
+    }
+  ],
+  "chats": [
+    {
+      "id": 1,
+      "name": "Tom",
+      "chat": [
+        {
+          "id": 1,
+          "time": "19:10",
+          "text": "Hi there! How r u doin'? ",
+          "type": "own"
+        },
+        {
+          "id": 2,
+          "time": "19:31",
+          "text": "Fine, and how r u?",
+          "type": "others"
+        },
+        {
+          "id": 3,
+          "time": "14:14",
+          "text": "Im fine too ty!",
+          "type": "own"
+        },
+        {
+          "id": 4,
+          "time": "13:30",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 5,
+          "time": "13:33",
+          "text": "фвыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыыы",
+          "type": "own"
+        },
+        {
+          "id": 6,
+          "time": "13:36",
+          "text": "я ебал вас всех в рот бля блаб ля блаывффыв афвыфывфыв всук а ьы а ы афа зае бал",
+          "type": "own"
+        },
+        {
+          "id": 7,
+          "time": "13:37",
+          "text": "вввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв",
+          "type": "own"
+        },
+        {
+          "id": 8,
+          "time": "16:48",
+          "text": "2332332",
+          "type": "own"
+        },
+        {
+          "id": 9,
+          "time": "17:28",
+          "text": "3123",
+          "type": "own"
+        },
+        {
+          "id": 10,
+          "time": "17:29",
+          "text": "12232",
+          "type": "own"
+        },
+        {
+          "id": 11,
+          "time": "21:59",
+          "text": "asd",
+          "type": "own"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sam",
+      "chat": [
+        {
+          "id": 1,
+          "time": "19:10",
+          "text": "Hi there! How r u doin'? ",
+          "type": "own"
+        },
+        {
+          "id": 2,
+          "time": "19:31",
+          "text": "Fine, and how r u?",
+          "type": "others"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cramer",
+      "chat": [
+        {
+          "id": 1,
+          "time": "18:30",
+          "text": "Hi there! How r u doin'? ",
+          "type": "own"
+        },
+        {
+          "id": 2,
+          "time": "19:31",
+          "text": "Fine, and how r u?",
+          "type": "others"
+        },
+        {
+          "id": 3,
+          "time": "19:33",
+          "text": "I'm OK too :) ",
+          "type": "own"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Samuel",
+      "chat": [
+        {
+          "id": 1,
+          "time": "18:30",
+          "text": "Hi there! How r u doin'? ",
+          "type": "own"
+        },
+        {
+          "id": 2,
+          "time": "19:31",
+          "text": "Fine, and how r u?",
+          "type": "others"
+        },
+        {
+          "id": 3,
+          "time": "19:33",
+          "text": "I'm OK too :) ",
+          "type": "own"
+        },
+        {
+          "id": 4,
+          "time": "20:39",
+          "text": "wow",
+          "type": "own"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Miranda",
+      "chat": [
+        {
+          "id": 1,
+          "time": "18:20",
+          "text": "Hi there! How r u doin'? ",
+          "type": "own"
+        },
+        {
+          "id": 2,
+          "time": "19:31",
+          "text": "Fine, and how r u?",
+          "type": "others"
+        },
+        {
+          "id": 3,
+          "time": "19:33",
+          "text": "I'm OK too :) ",
+          "type": "own"
+        },
+        {
+          "id": 4,
+          "time": "16:07",
+          "text": "22333",
+          "type": "own"
+        },
+        {
+          "id": 5,
+          "time": "16:07",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 6,
+          "time": "16:07",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 7,
+          "time": "16:07",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 8,
+          "time": "16:07",
+          "text": "213213213",
+          "type": "own"
+        },
+        {
+          "id": 9,
+          "time": "16:07",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 10,
+          "time": "16:07",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 11,
+          "time": "11:38",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 12,
+          "time": "11:42",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 13,
+          "time": "11:42",
+          "text": "1232323321auff",
+          "type": "own"
+        },
+        {
+          "id": 14,
+          "time": "13:29",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 15,
+          "time": "13:29",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 16,
+          "time": "13:29",
+          "text": "",
+          "type": "own"
+        },
+        {
+          "id": 17,
+          "time": "14:28",
+          "text": "123",
+          "type": "own"
+        },
+        {
+          "id": 18,
+          "time": "14:28",
+          "text": "213213",
+          "type": "own"
+        },
+        {
+          "id": 19,
+          "time": "17:43",
+          "text": "2131212231313",
+          "type": "own"
+        }
+      ]
+    }
+  ]
+}
