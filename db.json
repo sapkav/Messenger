@@ -3,32 +3,51 @@
     {
       "id": 1,
       "name": "Tom",
-      "phone": "8-800-555-22-33",
+      "nickname": "Mouse",
+      "phone": "88005552233",
       "status": "online"
     },
     {
       "id": 2,
       "name": "Sam",
-      "phone": "8-800-888-22-33",
+      "nickname": "Debik",
+      "phone": "88008882233",
       "status": "offline"
     },
     {
       "id": 3,
       "name": "Samuel",
-      "phone": "8-800-232-22-33",
+      "nickname": "Pig",
+      "phone": "88002322233",
       "status": "offline"
     },
     {
       "id": 4,
       "name": "Jack",
-      "phone": "8-800-777-22-33",
+      "nickname": "Duck",
+      "phone": "88007772233",
       "status": "online"
     },
     {
       "id": 5,
       "name": "Miranda",
-      "phone": "8-800-241-22-33",
+      "nickname": "Know-it-all",
+      "phone": "88002412233",
       "status": "offline"
+    },
+    {
+      "name": "Aliks",
+      "nickname": "Bear",
+      "phone": "89971033451",
+      "status": "offline",
+      "id": 6
+    },
+    {
+      "name": "Dora",
+      "nickname": "Singer",
+      "phone": "89991342352",
+      "status": "offline",
+      "id": 7
     }
   ],
   "chats": [
@@ -295,6 +314,30 @@
           "type": "own"
         }
       ]
+    },
+    {
+      "name": "Aliks",
+      "chat": [
+        {
+          "id": 1,
+          "time": "20:54",
+          "text": "Hello",
+          "type": "own"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Dora",
+      "chat": [
+        {
+          "id": 1,
+          "time": "22:34",
+          "text": "hey babe",
+          "type": "own"
+        }
+      ],
+      "id": 7
     }
   ]
 }

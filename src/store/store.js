@@ -46,6 +46,18 @@ export default new Vuex.Store({
       .then(response => {
         return response
       })
+    },
+    SET_CONTACT_TO_CONTACTS({commit}, chat) {
+      return axios.post('http://localhost:3000/contacts', chat)
+      .then(response => {
+          return response
+      })
+    },
+    SET_CONTACT_TO_CHATS({commit}, chat) {
+      return axios.post('http://localhost:3000/chats', chat)
+      .then(response => {
+          return response
+      })
     }
   },
   getters: {

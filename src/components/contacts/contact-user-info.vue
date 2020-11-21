@@ -2,6 +2,7 @@
   <div class="contact-user-info">
       <div class="contact-user-info-avatar"></div>
       <div class="contact-user-info-content">
+        <p class="contact-user-info-content-nickname">{{currentContact.nickname}}</p>
        <p class="contact-user-info-content-number">{{currentContact.phone}}</p>
        <div class="contact-user-info-content-tools">
           <button class="start-call">Call</button>
@@ -98,6 +99,13 @@ mounted() {
 
     &-content {
         display: grid;
+
+        &-nickname {
+            font-size: 40px;
+            padding-bottom: 20px;
+            text-align: start;
+            color: rgb(192, 0, 0);
+        }
 
         &-number {
             font-size: 40px;

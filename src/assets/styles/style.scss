@@ -11,11 +11,10 @@ $xx : red;
   }
 
 @mixin btn {
-    color: red;
+    color: white;
     border-radius: 10px;
     background-color: black;
     padding: 7px 15px;
-    @include Stalin
 }
 
 
