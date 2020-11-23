@@ -36,6 +36,7 @@ export default {
 
 <style lang = "scss">
 .header {
+  color: black;
   background-color: rgb(186, 189, 221);
   height: 80px;
   position: fixed;

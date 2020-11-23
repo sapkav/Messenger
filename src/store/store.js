@@ -12,7 +12,7 @@ export default new Vuex.Store({
   },
   mutations: {
     SET_CONTACTS_ALL: (state, contacts) => {
-      state.contacts = contacts
+       state.contacts = contacts
     },
     SET_CHATS_ALL: (state, chats) => {
       state.chats = chats
@@ -57,6 +57,13 @@ export default new Vuex.Store({
       return axios.post('http://localhost:3000/chats', chat)
       .then(response => {
           return response
+      })
+    },
+    DELETE_MESSAGES_FROM_CHAT({commit}, {userId, chat}) {
+      return axios.put('http://localhost:3000/chats/' + userId, chat)
+      .then(response => {
+        console.log(response.data)
+        return response;
       })
     }
   },

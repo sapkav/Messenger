@@ -46,6 +46,7 @@ export default {
 
 <style lang = "scss">
 .chat-message {
+   color: black;
    word-break: break-all;
    border: 1px black solid;
    border-radius: 10px;
@@ -65,7 +66,8 @@ export default {
     &-parag {
        
        letter-spacing: 1.2px;
-       font-size: 16px;
+       line-height: 25px;
+       font-size: 20px;
     }
 
    &-time {

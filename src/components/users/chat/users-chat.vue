@@ -9,8 +9,8 @@
       v-for = "message in filteredSearches"
       :key = "message.id"
       :message1 = "message"
-      :userId = "user.name"
-      v-chat-scroll></chat-message>
+      :userId = "user.name">
+      </chat-message>
       <div class="users-chat-inputs">
           <span class="material-icons" @click="openSearch">search</span>
           <input type="text"
@@ -126,9 +126,9 @@ props: {
 
 <style lang = "scss">
   .users-chat {
+      color: black;
       padding-top: 100px;
       padding-bottom: 130px;
-      background-color: white;
       height: auto;
 
       &-search {

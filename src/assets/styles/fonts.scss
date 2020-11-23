@@ -1,3 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400;700&family=Lobster&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap');
 
 @mixin Stalin {font-family: 'Balsamiq Sans', cursive;}
+@mixin Lobster {font-family: 'Lobster', cursive;}
+@mixin openSans {font-family: 'Open Sans', sans-serif;}
+@mixin Amatic {font-family: 'Amatic SC', cursive;}
+@mixin Caveat {font-family: 'Caveat', cursive;}
+@mixin PressStart {font-family: 'Press Start 2P', cursive;}

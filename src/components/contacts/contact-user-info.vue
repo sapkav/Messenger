@@ -110,7 +110,7 @@ mounted() {
         &-number {
             font-size: 40px;
             padding-bottom: 20px;
-            text-align: center;
+            text-align: start;
         }
 
         &-tools {

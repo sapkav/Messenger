@@ -8,7 +8,8 @@
        <user-page
        v-for = "chat in filteredMessages"
        :key = "chat.id"
-       :user_data = "chat">
+       :user_data = "chat"
+       @deleteChat = "deleteChat">
        </user-page>
        </div>
        <p v-else class="user-list-not">Диалоги не найдены...</p>
@@ -26,7 +27,8 @@ export default {
  },
  data() {
      return {
-         inputMessages: ''
+         inputMessages: '',
+         bla: false
      }
  },
  methods: {
@@ -36,6 +38,9 @@ export default {
      ]),
      clearInputMessages() {
          this.inputMessages = ''
+     },
+     deleteChat() {
+         this.filteredMessages
      }
  },
  computed: {
@@ -50,8 +55,15 @@ export default {
         return this.chats.filter(item => {
             return item.name.toLowerCase().includes(this.inputMessages.toLowerCase());
         });
+      } else {
+          let arr = []
+          for (let item of this.chats) {
+              if (item.chat.length) {
+                  arr.push(item)
+              }
+          }
+         return arr
       }
-      return this.chats
     }
  },
  mounted() {
@@ -65,7 +77,6 @@ export default {
 .user-list {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: white;
 
     &-not {
         text-align: center;

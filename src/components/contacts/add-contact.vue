@@ -15,8 +15,8 @@
           <input type="text" placeholder="Номер..." v-model="numberText">
         </div>
           <div class="add-contact-list-vvod">
-          <p>Введите кличку(необязательно): </p>
-          <input type="text" placeholder="Кличка..." v-model="nicknameText">
+          <p>Введите никнейм(необязательно): </p>
+          <input type="text" placeholder="Никнейм..." v-model="nicknameText">
         </div>
       </div>
       <p class="add-contact-parag" v-show="contactsHasName">Контакт с таким именем уже существует...</p>
@@ -73,11 +73,11 @@ export default {
          this.isName = true
          this.isCorrectNumber = true
          this.contactSuccesful = true
-        /* this.SET_CONTACT_TO_CONTACTS({name : this.nameText, nickname: this.nicknameText, phone: this.numberText, status: 'offline'})
+         this.SET_CONTACT_TO_CONTACTS({name : this.nameText, nickname: this.nicknameText, phone: this.numberText, status: 'offline'})
              .then(() => {
                  this.textMessage = ''
              })
-          this.SET_CONTACT_TO_CHATS({name : this.nameText, chat: []}) */
+          this.SET_CONTACT_TO_CHATS({name : this.nameText, chat: []}) 
          this.nameText = ''
          this.numberText = ''
          this.nicknameText = ''
