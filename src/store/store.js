@@ -62,11 +62,25 @@ export default new Vuex.Store({
     DELETE_MESSAGES_FROM_CHAT({commit}, {userId, chat}) {
       return axios.put('http://localhost:3000/chats/' + userId, chat)
       .then(response => {
-        console.log(response.data)
+        return response;
+      })
+    },
+    DELETE_CONTACT({commit}, {userId}) {
+      return axios.delete('http://localhost:3000/contacts/' + userId)
+      .then(response => {
+        return response;
+      })
+    },
+    DELETE_CONTACT_CHAT({commit}, {userId}) {
+      return axios.delete('http://localhost:3000/chats/' + userId)
+      .then(response => {
         return response;
       })
     }
   },
   getters: {
+    СHATS1(state) {
+      return state.chats
+  }
   }
 })

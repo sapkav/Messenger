@@ -11,7 +11,8 @@
       :key = "contact.id"
       :contact_data="contact"
       class="contact-list-user"
-      @to-contact-info = "toContactInfo(contact)">
+      @to-contact-info = "toContactInfo(contact)"
+      @deleteAll = "deleteAll">
       </contact-user>
       </div>
       <p v-else class="contact-list-not">Ничего не найдено...</p>
@@ -37,6 +38,9 @@ export default {
          'FETCH_CONTACTS',
          'SET_NAME_HEADER'
      ]),
+     deleteAll() {
+         this.FETCH_CONTACTS()
+     },
      addContact() {
         this.$router.push({
              name: 'contactAdd'

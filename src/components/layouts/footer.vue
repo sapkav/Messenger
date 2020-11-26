@@ -9,10 +9,10 @@
        <router-link to = "details">
            <i class="material-icons">settings</i>
        </router-link>
-       <router-link to = "contacts">
+       <router-link to = "calls">
            <i class="material-icons">call</i>
        </router-link>
-       <router-link to = "contacts">
+       <router-link to = "home">
            <i class="material-icons">home</i>
        </router-link>
    </div>

@@ -5,6 +5,7 @@ import store from './store/store'
 import './assets/styles/style.scss'
 import 'material-design-icons-iconfont'
 
+
 new Vue({
   router,
   store,

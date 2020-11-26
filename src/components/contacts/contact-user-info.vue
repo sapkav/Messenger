@@ -72,6 +72,7 @@ mounted() {
         }
     })
  }
+ this.FETCH_CHATS()
 }
 }
 </script>

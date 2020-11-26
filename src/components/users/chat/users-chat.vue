@@ -5,12 +5,15 @@
            <button @click="searchMessage = ''">Очистить поиск</button>
            <button @click = "closeSearch">Закрыть поиск</button>
       </div>
+      <div id="scrollMessage">
       <chat-message
       v-for = "message in filteredSearches"
       :key = "message.id"
       :message1 = "message"
-      :userId = "user.name">
+      :userId = "user.name"
+      >
       </chat-message>
+      </div>
       <div class="users-chat-inputs">
           <span class="material-icons" @click="openSearch">search</span>
           <input type="text"
@@ -42,10 +45,15 @@ export default {
  },
  mounted() {
      this.SET_NAME_HEADER(this.user.name) 
-     this.scrollToEnd()
+     /* this.scrollToEnd()
      if (!this.chats.length) {
         this.FETCH_CHATS()
-    }
+    } */
+    /* document.getElementsByClassName('users-chat').scrollTop = */ 
+    console.log(document.getElementById('scrollMessage').scrollHeight);
+    document.getElementById('scrollMessage').scrollTop = document.getElementById('scrollMessage').scrollHeight
+    console.log(document.getElementById('scrollMessage').scrollTop)
+
  },
  updated() {
      this.scrollToEnd();
@@ -86,18 +94,19 @@ props: {
          openSearch() {
              this.isSearch = true
              document.querySelector(".users-chat").style.paddingTop = '130' + "px"
+             document.getElementById('scrollMessage').scrollTop = document.getElementById('scrollMessage').scrollHeight
          },
          closeSearch() {
              this.isSearch = false
              document.querySelector(".users-chat").style.paddingTop = '100' + "px"
              this.searchMessage = ''
          },
-         scrollToEnd() {
+         /* scrollToEnd() {
 				var container = document.querySelector(".users-chat");
                 var scrollHeight = container.scrollHeight;
                 console.log(scrollHeight)
                 container.scrollTop = scrollHeight;
-		},
+		}, */
          sendMessage() {
              if (this.textMessage !== '') {
              let user = {...this.user}

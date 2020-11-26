@@ -18,7 +18,7 @@
 
 <script>
 import userPage from './user-page'
-import {mapActions, mapState} from 'vuex'
+import {mapActions, mapState, mapGetters} from 'vuex'
 
 export default {
  name: 'user-list',
@@ -40,13 +40,16 @@ export default {
          this.inputMessages = ''
      },
      deleteChat() {
-         this.filteredMessages
+         this.FETCH_CHATS()
      }
  },
  computed: {
      ...mapState([
          'chats'
      ]),
+     ...mapGetters([
+        'СHATS1'
+      ]),
      messageHas() {
       return (this.inputMessages && !this.filteredMessages.length)
     },

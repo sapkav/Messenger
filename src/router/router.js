@@ -6,6 +6,8 @@ import userList from '../components/users/user-list.vue'
 import usersChat from '../components/users/chat/users-chat.vue'
 import detailsMain from '../components/details/details-main.vue'
 import addContact from '../components/contacts/add-contact.vue'
+import callList from '../components/calls/call-list.vue'
+import homeMain from '../components/home/home-main.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +37,16 @@ const routes = [
   path: '/details',
   name: 'details',
   component: detailsMain
+},
+{
+  path: '/calls',
+  name: 'calls',
+  component: callList
+},
+{
+  path: '/home',
+  name: 'home',
+  component: homeMain
 },
 {
   path: '/contactAdd',

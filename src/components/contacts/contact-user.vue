@@ -1,4 +1,5 @@
 <template>
+  <div class="contact">
   <div class="contact-user" @click="toContactInfo">
      <div class="contact-user-img"></div>
      <div class="contact-user-name">
@@ -8,9 +9,15 @@
       class="contact-user-status"
       :class="contact_data.status"></div>
   </div>
+  <span class="material-icons" @click="deleteContact">
+   delete_forever
+  </span> 
+  </div>
 </template>
 
 <script>
+import {mapActions} from 'vuex'
+
 export default {
 name: "contact-user",
 props: {
@@ -22,26 +29,37 @@ props: {
     }
 },
 methods: {
+    ...mapActions([
+        'DELETE_CONTACT',
+        'DELETE_CONTACT_CHAT'
+    ]),
     toContactInfo() {
         this.$emit('to-contact-info')
+    },
+    deleteContact() {
+        this.DELETE_CONTACT({userId: this.contact_data.id})
+        this.DELETE_CONTACT_CHAT({userId: this.contact_data.id})
+        .then(this.$emit('deleteAll'))
     }
 }
 }
 </script>
 
 <style lang = "scss">
-.contact-user {
+.contact {
+    display: grid;
+    grid-template-columns: 12fr 1fr;
+    border-bottom: 1px solid black;
+    &:last-child {
+      border-bottom: none;
+    }
+
+  &-user {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     padding-bottom: 20px;
     padding-top: 20px;
-    border-bottom: 1px solid black;
-
-    &:last-child {
-      border-bottom: none;
-    }
-
 
     &-img {
         background-color: rgb(142, 163, 129);
@@ -70,5 +88,12 @@ methods: {
     &-status.offline {
       background: red;
     }
+}
+
+span {
+    font-size: 40px;
+    align-self: center;
+    cursor: pointer;
+}
 }
 </style>
